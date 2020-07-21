@@ -1,11 +1,4 @@
 .App {
-  display: flex;
-  color:  red;
+  margin: 0px 0px 0px 0px
 }
 
-.name {
-  color: blue;
-  font-size: 90px;
-  border: 1px solid black
-  /*size: 40px;*/
-}
