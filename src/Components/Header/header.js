@@ -5,7 +5,7 @@ function Header() {
     return (
         <div className="header">
                 {/*<header>*/}
-                {/*    <h1>מתכות</h1>*/}
+                {/*    <h2>מתכות</h2>*/}
                 {/*</header>*/}
                 <div>
                     <ul className="header-menu">
