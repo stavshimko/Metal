@@ -4,9 +4,10 @@ import {Link} from "react-router-dom";
 function Header() {
     return (
         <div className="header">
-                {/*<header>*/}
-                {/*    <h2>מתכות</h2>*/}
-                {/*</header>*/}
+                <header>
+                    <h1 className={"MainLogo"}>
+                    <img src = "./Sagalovich_Shamir_Logo.png" alt={""}/>
+                    </h1>
                 <div>
                     <ul className="header-menu">
                         <li><Link to="/about" className="link">קצת עלינו</Link></li>
@@ -21,6 +22,7 @@ function Header() {
 
                     </ul>
                 </div>
+                </header>
         </div>
     );
 }
