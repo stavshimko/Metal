@@ -5,9 +5,10 @@ function Header() {
     return (
         <div className="header">
                 <header>
-                    <h1 className={"MainLogo"}>
-                    <img src = "./Sagalovich_Shamir_Logo.png" alt={""}/>
-                    </h1>
+                    <div>
+                        <img className="MainLogo" src= "./Sagalovich_Shamir_Logo.png" alt=""/>
+                    </div>
+                </header>
                 <div>
                     <ul className="header-menu">
                         <li><Link to="/about" className="link">קצת עלינו</Link></li>
@@ -22,7 +23,6 @@ function Header() {
 
                     </ul>
                 </div>
-                </header>
         </div>
     );
 }
