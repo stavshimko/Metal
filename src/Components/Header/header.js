@@ -1,20 +1,20 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import {Link} from "react-scroll";
 
 function Header() {
     return (
         <div>
             <header className="header">
                 <div className="container">
-                    <div id="logo" class="pull-left">
-                        <Link to="/"><img src="" alt="" title="" /></Link>
+                    <div id="logo" className="pull-left" >
+                        <Link activeClass="active" to="/" spy={true} smooth={true} duration={3000} ><img id="logo" src="./Sagalovich_Shamir_Logo.png" alt="" title="" /></Link>
                     </div>
                     <nav id="nav-menu-container">
                         <ul className="nav-menu">
-                            <li><Link to="/about" className="link">קצת עלינו</Link></li>
-                            <li><Link to="/catalog" className="link" >קטלוג</Link></li>
-                            <li><Link to="/calc" className="link" >מחשבון</Link></li>
-                            <li><Link to="/" className="link" >דף הבית</Link></li>
+                            <li><Link activeClass="active" to="/about" spy={true} smooth={true} duration={3000} className="link">קצת עלינו</Link></li>
+                            <li><Link activeClass="active" to="/catalog" spy={true} smooth={true} duration={3000} className="link" >קטלוג</Link></li>
+                            <li><Link activeClass="active" to="/calc"  spy={true} smooth={true} duration={3000} className="link" >מחשבון</Link></li>
+                            <li><Link activeClass="active" to="/"  spy={true} smooth={true} duration={3000} className="link" >דף הבית</Link></li>
                         </ul>
                     </nav>
 

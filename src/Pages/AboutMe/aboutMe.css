@@ -1,4 +1,6 @@
 .about-me {
+    border: 3px red solid;
     text-align: center;
-    padding: 10% 4% 0px 4%;
+    padding: 30% 4% 0px 4%;
+    margin: 0px 0px 5px 0px;
 }

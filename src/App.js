@@ -1,5 +1,7 @@
 import React from 'react';
 import {BrowserRouter as Router,Switch,Route} from "react-router-dom";
+import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+
 /*
     css
 */
@@ -35,6 +37,10 @@ export default class App extends React.Component {
          });
     }
 
+    scrollToTop = () => {
+        scroll.scrollToTop();
+    }
+
     render () {
         // console.log(this.state.name)
         return (
@@ -42,21 +48,21 @@ export default class App extends React.Component {
                 {/*<button onClick={this.ClickMe}>Click Me</button>*/}
                 {/*Hello World! It's TZVAIG 2 <span className="name"> {this.state.name} </span>*/}
                 <Router>
-                    <Header/>
-                    <Switch>
-                        <Route path="/about">
-                            <AboutMe/>
-                        </Route>
-                        <Route path="/calc">
-                            <Calc/>
-                        </Route>
-                        <Route path="/catalog">
-                            <Catalog/>
-                        </Route>
-                        <Route path="/">
-                            <Home/>
-                        </Route>
-                    </Switch>
+                    <Header toTop={this.scrollToTop}/>
+
+                    <Element name="/" >
+                        <Home/>
+                    </Element>
+                    <Element name="/calc">
+                        <Calc/>
+                    </Element>
+                    <Element name="/catalog" >
+                        <Catalog/>
+                    </Element>
+                    <Element name="/about" >
+                        <AboutMe/>
+                    </Element>
+                    <Link onClick={this.scrollToTop}>To the top!</Link>
                 </Router>
                 <Footer/>
             </div>
