@@ -5,7 +5,7 @@ function AboutMe(props) {
     // console.log('run About Me')
     return (
         <div className="about-me">
-            <h1>קצת עלינו</h1>
+            <h1 className="about-me_h1">קצת עלינו</h1>
 
 
         </div>

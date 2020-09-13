@@ -1,6 +1,14 @@
 .catalog {
-    border: 3px red solid;
+    background-color: gray;
     text-align: center;
-    padding: 30% 4% 0px 4%;
-    margin: 0px 0px 5px 0px;
+    padding: 1% 4% 0px 4%;
+    margin: 0px 0px 0px 0px;
+    height: 60vh;
+}
+
+.catalog_h1{
+    position: relative;
+    top: 45%;
+    transform: translateY(-45%);
+
 }

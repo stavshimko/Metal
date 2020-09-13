@@ -1,6 +1,16 @@
 .about-me {
-    border: 3px red solid;
+    /*border: 3px red solid;*/
+    background-color: burlywood;
     text-align: center;
-    padding: 30% 4% 0px 4%;
-    margin: 0px 0px 5px 0px;
+    padding: 1% 4% 0px 4%;
+    margin: 0px 0px 0px 0px;
+    height: 65vh;
+}
+
+.about-me_h1{
+    /*text-align: center;*/
+    position: relative;
+    top: 45%;
+    transform: translateY(-45%);
+
 }

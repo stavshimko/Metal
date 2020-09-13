@@ -11,7 +11,7 @@ import "./Components/Header/header.css";
 import "./Pages/AboutMe/aboutMe.css";
 import "./Pages/Catalog/Catalog.css";
 import "./Pages/Calc/calc.css";
-import "./Components/Home/Home.css";
+import "./Pages/Home/Home.css";
 /*
     objects
 */
@@ -20,7 +20,7 @@ import Header from "./Components/Header/header";
 import AboutMe from "./Pages/AboutMe/AboutMe";
 import Catalog from "./Pages/Catalog/Catalog";
 import Calc from "./Pages/Calc/calc";
-import Home from "./Components/Home/Home";
+import Home from "./Pages/Home/Home";
 
 export default class App extends React.Component {
     constructor(props) {
@@ -62,7 +62,7 @@ export default class App extends React.Component {
                     <Element name="/about" >
                         <AboutMe/>
                     </Element>
-                    <Link onClick={this.scrollToTop}>To the top!</Link>
+                    {/*<Link onClick={this.scrollToTop}>To the top!</Link>*/}
                 </Router>
                 <Footer/>
             </div>

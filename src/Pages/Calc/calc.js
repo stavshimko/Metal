@@ -12,7 +12,7 @@ export default class Calc extends React.Component {
     render () {
         return (
             <div className="calc">
-                <h2>מחשבון</h2>
+                <h1 className="calc_h1">מחשבון</h1>
             </div>
         );
     }

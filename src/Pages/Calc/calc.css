@@ -1,6 +1,16 @@
 .calc {
-    border: 3px red solid;
+    background-color: burlywood;
     text-align: center;
-    padding: 10% 4% 0px 4%;
-    margin: 0px 0px 5px 0px;
+    padding: 0.1% 4% 0px 4%;
+    margin: 0px 0px 0px 0px;
+    height: 60vh;
+}
+
+.calc_h1{
+    /*text-align: center;*/
+    position: relative;
+    top: 45%;
+    transform: translateY(-45%);
+
+
 }
